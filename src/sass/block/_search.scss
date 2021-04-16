@@ -1,0 +1,15 @@
+.search{
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    &__categories{
+        flex-basis: 35%;
+    }
+    &__input{
+        flex-basis: 59%;
+        position: relative;
+    }
+}

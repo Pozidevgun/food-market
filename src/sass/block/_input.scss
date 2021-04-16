@@ -1,0 +1,15 @@
+.input{
+    background-color: inherit;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    &__button{
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: inherit;
+        border: none;
+    }
+}

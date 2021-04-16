@@ -1,0 +1,17 @@
+.client{
+    padding: 40px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__search{
+        flex-basis: 40%;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 8%;
+    }
+}

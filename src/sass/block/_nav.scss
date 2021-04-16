@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__item{
+        list-style-type: none;
+    }
+    &__link{
+        color: $main;
+        text-decoration: none;  
+        cursor: pointer;
+        &--black{
+            color: $black;
+        } 
+    }
+}

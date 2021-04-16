@@ -1,0 +1,44 @@
+@import 'base/font';
+@import 'base/color';
+@import 'base/mixin';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: $black;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    &--bigger{
+        max-width: 1260px;
+        overflow: hidden;
+    }
+}
+
+
+@import 'block/header';
+@import 'block/nav';
+@import 'block/_contact';
+@import 'block/bascket';
+@import 'block/client';
+@import 'block/search';
+@import 'block/categories';
+@import 'block/input';
+@import 'block/bar';
+@import 'block/menu';
+@import 'block/button';
+@import 'block/title';
+@import 'block/card';
+@import 'block/article';
+@import 'block/slider';
+@import 'block/section';
+@import 'block/blog';

@@ -1,0 +1,29 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__nav{
+        margin-bottom: 40px;
+        list-style: none;
+    }
+    &__item{
+        margin-bottom: 12px;
+        opacity: 1;
+        transition: 1s;
+        &--hide{
+            display: none;
+            opacity: 0;
+        }
+    }
+    &__link{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: $main;
+    }
+
+}

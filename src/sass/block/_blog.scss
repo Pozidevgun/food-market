@@ -1,0 +1,17 @@
+.blog{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__column{
+        flex-basis: 15%;
+        height: 100%;
+        &--bigger{
+            flex-basis: 35%;
+        }
+    }
+        
+        
+
+}

@@ -1,0 +1,12 @@
+.article{
+    width: 100%;
+    max-width: 419px;
+    height: 280px;
+    border-radius: 12px;
+    background: url(../../img/homepage/Image-light.jpg);
+    padding: 48px 32px 38px 32px;
+    &__title{
+        margin-bottom: 94px;
+    }
+    
+}

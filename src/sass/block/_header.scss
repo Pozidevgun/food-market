@@ -1,0 +1,15 @@
+.header{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid $grey;
+    }
+    &__nav{
+        flex-basis: 20%;
+    }
+    &__contacts{
+        flex-basis: 40%;
+    }
+}

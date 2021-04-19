@@ -1,14 +1,13 @@
 .section{
     padding: 64px 0px;
+    &--withoutPaddingBottom{
+        padding-bottom: 0;
+    }
     &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        &--column{
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: s;
-        }
+        
     }
     &__header{
         display: flex;
@@ -18,6 +17,9 @@
     }
     &__title{
         margin-bottom: 32px;
+        &--withoutMargin{
+            margin-bottom: 0;
+        }
     }
     &__menu{
         flex-basis: 20%;

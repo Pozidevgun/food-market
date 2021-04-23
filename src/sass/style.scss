@@ -16,12 +16,14 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1260px;
     margin: 0 auto;
     &--bigger{
-        max-width: 1260px;
         overflow: hidden;
     }
+}
+.hidden{
+   display: none;
 }
 
 
@@ -44,3 +46,5 @@ body {
 @import 'block/blog';
 @import 'block/tags';
 @import 'block/footer';
+@import 'block/logo';
+@import 'block/user';

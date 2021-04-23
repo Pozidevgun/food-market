@@ -6,12 +6,30 @@
         align-items: center;
     }
     &__search{
-        flex-basis: 40%;
+        flex-basis: 50%;
     }
     &__info{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-basis: 8%;
+    }
+}
+@include media-query (825){
+    .client{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__search{
+            order: 2;
+            flex-basis: 100%;
+            margin-top: 16px;
+        }
+        &__logo{
+            flex-basis: 10%;
+        } 
+        &__info{
+            flex-basis: 10%;
+        }
     }
 }

@@ -32,3 +32,8 @@
         background-color: inherit;
     }
 }
+@include media-query (825){
+    .button{
+        font-size: 12px;
+    }
+}

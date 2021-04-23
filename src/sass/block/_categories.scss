@@ -7,3 +7,12 @@
         align-items: center;
     }
 }
+@include media-query (1050){
+    .categories{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        
+
+    }
+}

@@ -3,15 +3,30 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     &__column{
         flex-basis: 15%;
-        height: 100%;
         &--bigger{
             flex-basis: 35%;
         }
     }
-        
-        
-
+}
+@include media-query(1000){
+    .blog{
+        &__column{
+            flex-basis: 30%;
+            &--bigger{
+                flex-basis: 70%;
+            }
+        }
+    }
+}
+@include media-query(800){
+    .blog{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

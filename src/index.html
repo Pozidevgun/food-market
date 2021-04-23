@@ -13,11 +13,20 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__contacts">
+                    <div class="header__burger">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" >
+                                <use href = "#phone"></use>
+                            </svg>
+                        </span>
+                        
+                    </div>
                     <ul class="contacts">
                         <li class="contacts__item"><a href="#" class="nav__link">Chat with us </a></li>
                         <li class="contacts__item"><a href="tel:+420336775664" class="nav__link nav__link--black">+420 336 775 664</a></li>
                         <li class="contacts__item"><a href="mailto:info@freshnesecom.com" class="nav__link nav__link--black">info@freshnesecom.com</a></li>
                     </ul>
+                    
                 </div>
                 <nav class="header__nav">
                     <ul class="nav">
@@ -40,7 +49,7 @@
                 <div class="client__search">
                     <div class="search">
                     <div class="search__categories">
-                        <div class="bar">
+                        <div class="bar bar--withoutMargin">
                             <div class="bar__button">
                                 <p class ="bar__text">
                                     All categories
@@ -85,10 +94,18 @@
                 </div>
                 <div class="client__info">
                     <div class="user">
-                        <img src="img/homepage/user.svg" alt="user">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" >
+                                <use href = "#user"></use>
+                            </svg>
+                        </span>
                     </div>
                     <div class="bascket">
-                        <img src="img/homepage/basket.svg" alt="bascket">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" >
+                                <use href = "#bascket"></use>
+                            </svg>
+                        </span>
                         <span class = "bascket__products">4</span>
                     </div>
                 </div>
@@ -741,7 +758,7 @@
     <section class="section">
         <div class="container">
                 <div class="section__header">
-                    <div class="section__title">
+                    <div class="section__title section__title--withoutMargin">
                         <h4 class="title title--h4">Our customers says</h4>
                     </div>
                     <div class="section__button">
@@ -999,7 +1016,7 @@
     <section class="section">
         <div class="container">
             <div class="section__header">
-                <div class="section__title">
+                <div class="section__title section__title--withoutMargin">
                     <h4 class="title title--h4">
                         Read our Blog posts 
                     </h4>
@@ -1022,10 +1039,12 @@
                             <div class="card card--withoutBorder card--withoutPadding"">
                                 <div class="card__img">
                                     <img src="img/homepage/blog1.jpg" alt="delishes">
-                                    <div class="card__discount card__discount--further">
-                                       <span>
-                                        Dinner tips
-                                       </span> 
+                                    <div class="card__discount">
+                                        <div class="tags">
+                                            <span class="tags__item tags__item--grey">
+                                             Dinner tips
+                                            </span> 
+                                         </div>
                                     </div>
                                     <div class="card__info">
                                         <div class="card__description">
@@ -1045,17 +1064,17 @@
                             </div>
                         </div>
                         <div class="blog__column">
-                            <div class="card card--withoutBorder card--withoutPadding">
+                            <div class="card card--withoutBorder card--withoutPadding card--medium">
                                 <div class="card__wrapper">
                                     <div class="card__img">
                                         <img src="img/homepage/blog2.jpg" alt="cardImg">
                                     </div>
-                                   
-                                        <div class="card__discount card__discount--pr">
-                                           <span>Vegetable</span>   
-                                        </div>
-                                    
-                                    
+                                    <div class="card__discount card__discount--pr">
+                                        <div class="tags">
+                                            <span class="tags__item">
+                                             Vegetable
+                                         </div>
+                                    </div>
                                     <div class="card__title">
                                         <h4 class="title title--h4">Which vegetable your 
                                             family will love and want’s eat each day</h4>
@@ -1069,7 +1088,7 @@
                             </div>
                         </div>
                         <div class="blog__column blog__column--bigger">
-                            <div class="card card--row card--withoutBorder card--withoutPadding">
+                            <div class="card card--row card--withoutBorder card--withoutPadding card--withoutMargin">
                                 <div class="card__info card__info--pr card__info--mr">
                                     <div class="card__title"><h5 class="title title--h5">
                                         Salat is kinda good start to your morning routines
@@ -1084,7 +1103,7 @@
                                     <img src="img/homepage/blog3.jpg" alt="food">
                                 </div>
                             </div>
-                            <div class="card card--row card--withoutBorder card--withoutPadding">
+                            <div class="card card--row card--withoutBorder card--withoutPadding card--withoutMargin">
                                 <div class="card__info card__info--pr card__info--mr">
                                     <div class="card__title"><h5 class="title title--h5">
                                         Salat is kinda good start to your morning routines
@@ -1099,7 +1118,7 @@
                                     <img src="img/homepage/blog4.jpg" alt="food">
                                 </div>
                             </div>
-                            <div class="card card--row card--withoutBorder card--withoutPadding">
+                            <div class="card card--row card--withoutBorder card--withoutPadding card--withoutMargin">
                                 <div class="card__info card__info--pr card__info--mr">
                                     <div class="card__title"><h5 class="title title--h5">
                                         Salat is kinda good start to your morning routines
@@ -1122,7 +1141,7 @@
     </section>
     <section class="section section--withoutPaddingBottom">
         <div class="container">
-            <div class="section__wrapper">
+            <div class="section__wrapper section__wrapper--wrap">
                 <div class="menu">
                     <div class="menu__wrapper">
                         <div class="menu__title">
@@ -1221,6 +1240,18 @@
             <div class="copy">Copyright © 2020 petrbilek.com</div>
         </div>
     </footer>
+    <div class="hidden">
+        <svg width="24" height="22" viewBox="0 0 24 22" id = "bascket"xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.8896 19.8499H6.10955C5.79187 19.8501 5.48326 19.7439 5.23309 19.5481C4.98291 19.3523 4.80562 19.0783 4.72955 18.7699L2.07955 8.15986C2.05369 8.05657 2.05174 7.94874 2.07383 7.84458C2.09593 7.74042 2.1415 7.64267 2.20707 7.55878C2.27264 7.47489 2.35649 7.40706 2.45223 7.36046C2.54797 7.31386 2.65307 7.28971 2.75955 7.28986H21.2396C21.346 7.28971 21.4511 7.31386 21.5469 7.36046C21.6426 7.40706 21.7265 7.47489 21.792 7.55878C21.8576 7.64267 21.9032 7.74042 21.9253 7.84458C21.9474 7.94874 21.9454 8.05657 21.9196 8.15986L19.2696 18.7699C19.1935 19.0783 19.0162 19.3523 18.766 19.5481C18.5158 19.7439 18.2072 19.8501 17.8896 19.8499V19.8499Z" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.79941 2.14993L6.89941 7.28993" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.8799 2.14993L16.7899 7.28993" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg width="22" height="24" viewBox="0 0 22 24" id = "user" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 21.9999L2.79 19.1199C5.4 9.6199 16.6 9.6199 19.21 19.1199L20 21.9999" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 11.98C13.7614 11.98 16 9.74141 16 6.97998C16 4.21856 13.7614 1.97998 11 1.97998C8.23858 1.97998 6 4.21856 6 6.97998C6 9.74141 8.23858 11.98 11 11.98Z" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+            </svg>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" id = "phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>    
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
     integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="

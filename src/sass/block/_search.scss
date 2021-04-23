@@ -13,3 +13,13 @@
         position: relative;
     }
 }
+// @include media-query (800){
+//     .search{
+//         &__categories{
+//             display: none;
+//         }
+//         &__input{
+//             flex-basis: 100%;
+//         }
+//     }
+// }

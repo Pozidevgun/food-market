@@ -12,4 +12,39 @@
     &__contacts{
         flex-basis: 40%;
     }
+    &__burger{
+        display: none;
+    }
+    &__burger span{
+        background-color: #f5f5f5;
+        padding: 10px;
+        
+    }
+    &__burger svg{
+        width: 16px;
+        height: 16px;
+        
+        
+    }
+}
+@include media-query (850){
+    .header{
+        &__nav{
+            flex-basis:35%;
+        }
+        &__contacts{
+            flex-basis: 60%;
+            position: relative;
+        }
+    }
+}
+@include media-query (680){
+    .header{
+        &__nav{
+            flex-basis: 85%;
+        }
+        &__burger{
+            display: block;
+        }
+    }
 }

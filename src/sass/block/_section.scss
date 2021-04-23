@@ -42,3 +42,31 @@
         }
     }
 }
+@include media-query(825){
+    .section{
+        &__wrapper{
+            display: block;
+            &--wrap{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &__menu{
+            margin-bottom: 16px;
+        }
+    }
+}
+@include media-query(660){
+    .section{
+        padding: 32px 0px;
+        &__card .card:last-child{
+            display: none;
+        }
+        &__card .article:last-child{
+            display: none;
+        }
+        &__card{
+            flex-wrap: wrap;
+        }
+    }
+}

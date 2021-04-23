@@ -5,8 +5,19 @@
     border-radius: 12px;
     background: url(../../img/homepage/Image-light.jpg);
     padding: 48px 32px 38px 32px;
+    margin-left: 16px;
+    &__wrapper{
+        width: 100%;
+    }
     &__title{
         margin-bottom: 94px;
     }
-    
+}
+@include media-query(550){
+    .article{
+        margin-left: 0;
+        &__title{
+            margin-bottom: 50px;
+        }
+    }
 }

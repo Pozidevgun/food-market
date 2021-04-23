@@ -1,16 +1,12 @@
-/* Slider */
-.slick-slider
-{
-}
-
 .slick-list
-{
-    
+{    
     padding: 29px 0px;
     
 }
 .slick-track{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slider .slick-arrow{
     position: absolute;

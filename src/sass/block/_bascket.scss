@@ -1,5 +1,9 @@
  .bascket{
      position: relative;
+     margin-left: 10px;
+     & svg{
+         @include box (24px,24px)
+     }
      &__products{
          position: absolute;
          bottom: -5px;

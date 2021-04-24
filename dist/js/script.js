@@ -18,4 +18,10 @@ $(document).ready(function(){
             },
           ]
     });
+$('.header__burger').on('click',function(){
+  $('.contacts').toggleClass('contacts--open')
+});
+$('.bar').on('click',function(){
+  $(this).find('.bar__items').toggleClass('bar__items--open')
+});
 })

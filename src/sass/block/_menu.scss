@@ -35,5 +35,28 @@
 @include media-query(825){
     .menu{
         flex-basis: 49%;
+        &__wrapper--row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+    .menu__wrapper--row{
+        & .menu__nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+            margin-right: 16px;
+            flex-wrap: wrap;
+        }
+        & .menu__title{
+            margin-right: 16px;
+        }
+        & .menu__item{
+            margin-right: 10px;
+        }
     }
 }

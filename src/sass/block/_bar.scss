@@ -36,9 +36,9 @@
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
         transition: .5s;
-        z-index: 10;
         &.bar__items--open{
             opacity: 1;
+            z-index: 100;
         }
     }
     &__item{

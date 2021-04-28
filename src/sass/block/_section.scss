@@ -1,5 +1,7 @@
 .section{
+    position: relative;
     padding: 64px 0px;
+    z-index: 99;
     &--withoutPaddingBottom{
         padding-bottom: 0;
     }
@@ -36,6 +38,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        &--column{
+            flex-direction: column;
+        }
         &--bigger{
             flex-basis: 100%;
             width: 100%;

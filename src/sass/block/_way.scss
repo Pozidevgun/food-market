@@ -1,0 +1,19 @@
+.way{
+    padding-top: 20px;
+    &__items{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+    }
+    &__item{
+        margin-right: 10px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #151515;
+        &--grey{
+            color: $grey;
+        }
+    }
+}

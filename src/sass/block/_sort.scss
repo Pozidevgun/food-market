@@ -1,0 +1,29 @@
+.sort{
+    
+    &__wrapper{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $grey;
+        margin-right: 24px;
+        cursor: pointer;
+        &--active{
+            color: #151515;
+        }
+    }
+    &__img{
+        display: block;
+        opacity: 1;
+        margin-right: 5px;
+        &--hide{
+            display: none;
+            opacity: 0;
+        }
+    }
+}

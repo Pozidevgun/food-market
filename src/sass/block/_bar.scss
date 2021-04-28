@@ -6,14 +6,23 @@
     align-items: center;
     border-right: 1px solid $grey;
     font-weight: 400;
-    font-size: 15px;
     position: relative;
+    &--borderLeft{
+        padding-left: 10px;
+        border-left: 1px solid #a9a9a9;
+    }
     &.bar--without-border{
         border-right: none;
         & .bar__item{
             padding-left: 0px;
         }
     }
+    &--mini{
+        & .bar__text{
+            font-size: 12px;
+        }
+    }
+    
     &__button{
         display: flex;
         justify-content: center;
@@ -23,6 +32,12 @@
     }
     &__arrow{
         padding: 0px 10px;
+    }
+    &__arrow img{
+        display: flex;
+    }
+    &__text{
+        font-size: 15px;
     }
     &__items{
         position: absolute;
@@ -55,8 +70,11 @@
 }
 @include media-query (1050){
     .bar{
-        font-size: 12px;
+        
         flex-basis: 25%;
+        &__text{
+            font-size: 12px;
+        }
         &--withoutMargin{
             margin-bottom: 0;
         }

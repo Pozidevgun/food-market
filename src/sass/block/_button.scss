@@ -8,8 +8,10 @@
     align-items: center;
     padding: 13px 16px;
     cursor: pointer;
+    &--withMargin{
+        margin-bottom: 8px;
+    }
     &--grey{
-        width: 167px;
         height: 48px;
         background-color: #f9f9f9;
     }
@@ -27,9 +29,15 @@
     }
     &__text{
         margin-right: 10px;
+        &--withoutMargin{
+            margin-right: 0;
+        }
     }
     &__arrow{
         background-color: inherit;
+        &--withMargin{
+            margin-right: 8px;
+        }
     }
 }
 @include media-query (825){

@@ -1,0 +1,58 @@
+.check{
+  position: relative;
+}
+.check__input{
+  position: absolute;
+  appearance: none;
+}
+.check__box{
+ position: absolute;
+ top: 50%;
+ left: 0;
+ transform: translate(0, -50%);
+ width: 20px;
+ height: 20px;
+ background-color: #fff;
+ border: 2px solid #d1d1d1;
+ &--circle{
+   border-radius: 50%;
+   border: 2px solid #d1d1d1;
+   @include box(25px, 25px);
+}
+}
+.check__text{
+  display: block;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+/* checket */
+.check__input:checked + .check__box{
+background-color: #6A983C;
+background-image: url(../../img/fruit/check.svg);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+/* Focus */
+
+.check__input:focus + .check__box{
+  border: 2px solid #46760a;
+}
+.check__input:checked + .check__box--circle{
+  background-color: #fff;
+  
+  }
+  /* Focus */
+  
+  .check__input:focus + .check__box--circle{
+    border:  4px solid #151515;
+  }
+/*disable */
+
+.check__input:disabled + .check__box{
+  background-color: #d1d1d1;
+  box-shadow: 
+  0 0 0  2px #151515;
+}
+.check__input:checked:disabled + .check__box{
+  background-color: #d1d1d1;
+}

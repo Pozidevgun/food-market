@@ -1,6 +1,9 @@
 .title{
     font-weight: 700;
     color: $black;
+    &--h1{
+        font-size: 32px;
+    }
     &--h3{
         font-size: 22px;
     }

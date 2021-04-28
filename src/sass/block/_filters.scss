@@ -1,0 +1,23 @@
+.filters{
+    &__wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__item{
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ebebeb;
+        border-radius: 12px;
+        padding: 10px 20px ;
+        margin-right: 16px;
+        height: 42px;
+    }
+    &__value{
+        margin-right: 20px;
+    }
+}

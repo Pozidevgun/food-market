@@ -1,0 +1,55 @@
+.range {
+    width:100%;
+    height:10px;
+    border-radius: 4px;
+    background-color: #ebebeb;
+}
+
+.range__button_1, .range__button_2 {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: move;
+    transform: translateY(-23%);
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px;
+}
+.range__between
+{
+  position: absolute;
+    height: 5px;
+    width:0px;
+    margin-top:3px;
+    border: none;
+    background-color: $main;
+}
+.range_inpt1, .range_inpt2
+{
+  width: 109px;
+  padding: 12px;
+  background-color: #ebebeb;
+  border-radius: 12px;
+  border: none;
+  color: $grey;
+  
+}
+.range__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.range__item{
+  display: block;
+}
+.range__scale{
+  position: relative;
+  margin-bottom: 20px;
+}
+.range__text{
+  font-size: 12px;
+  font-weight: 700;
+}

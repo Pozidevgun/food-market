@@ -1,12 +1,12 @@
 .card{
     padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     border: 2px solid $grey;
     border-radius: 12px;
     margin-right: 10px;
+    &--bigger{
+        width: 100%;
+        margin-bottom: 32px;
+    }
     &--medium{
         max-width: 270px;
     }
@@ -24,6 +24,17 @@
     }
     &--withoutBorder{
         border: none; 
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &--row{
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
     &__info{
         position: absolute;
@@ -76,6 +87,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &--withMargin{
+            margin-bottom: 16px;
+        }
     }
     &__price{
         font-weight: 700;
@@ -89,11 +103,13 @@
         font-size: 12px;
     }
     &__img{
-        position: relative;
-        
+        position: relative; 
+        flex-basis: 31%;  
     }
     &__img img{
         width: 100%;
+        display: flex;
+        border-radius: 12px;
     }
     &__discount{
         position: absolute;
@@ -109,6 +125,67 @@
         top: 0;
         left: 0;
         margin: 24px 0px;
+    }
+    &__stars{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 108px;
+        &--withMargin{
+            margin-bottom: 25px;
+        }
+    }
+    &__about{
+        display: flex;
+        align-items: space-between;
+        justify-content: flex-start;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+            color: #a9a9a9;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 16px;
+        }
+        
+    }
+    &__point {
+        margin-bottom: 8px;
+    }
+    &__information {
+        margin-bottom: 8px;
+    }
+    &__information span{
+        color: $main;
+    }
+    &__shipping{
+        font-size: 12px;
+        font-weight: 700;
+        color: $grey;
+    }
+    &__delivery{
+        font-size: 12px;
+        font-weight: 400;
+        color: $grey;
+        margin-bottom: 26px;
+    }
+    &__kin{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 32px;
+    }
+    &__container{
+        flex-basis: 68%;
+        
+    }
+    &__star img{
+        @include box (20px, 20px);
     }
         
 }

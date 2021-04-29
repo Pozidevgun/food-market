@@ -104,7 +104,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     /*init*/
     var sliderCoords = getCoords(slider);
     button1.style.marginLeft = '0px';
-    button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth) + 'px';
+    button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth-50) + 'px';
     between.style.width = (slider.offsetWidth-button1.offsetWidth) + 'px';
     inpt1.value = min;
     inpt2.value = max;

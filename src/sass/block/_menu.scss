@@ -40,10 +40,13 @@
     }
     &__button{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 20px;
         width: 100%;
+        & button{
+            margin-right: 15px;
+        }
     }
 }
 @include media-query(825){
@@ -55,6 +58,9 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+        }
+        &__range{
+            width: inherit;
         }
     }
     .menu__wrapper--row{
@@ -73,4 +79,5 @@
             margin-right: 10px;
         }
     }
+    
 }

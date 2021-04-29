@@ -194,6 +194,24 @@
         &--row{
             max-width: 369px;
         }
+        &__img{
+            flex-basis: 24%;
+        }
+        &__container{
+            flex-basis: 75%;
+        }
+    }
+}
+@include media-query (780){
+    .card{
+        &--bigger{
+            width: inherit;
+            padding: 16px;
+        }
+        &__kin{
+            display: block;
+            padding: 0;
+        }
     }
 }
 @include media-query (660){

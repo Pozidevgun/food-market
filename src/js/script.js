@@ -27,64 +27,26 @@ $('.bar').on('click',function(){
 $('.menu__button').on('click', function(){
   $(this).parent().find('.menu__item[data-hide]').toggleClass('menu__item--hide');
 })
+function checkWidth() {
+  var windowWidth = $('body').innerWidth(),
+      elem = $(".card__wrapper");
+      elem2 = $(".section__card") // лучше сохранять объект в переменную, многократно чтобы не насиловать 
+      console.log(elem)                   // страницу для поиска нужного элемента
+  if(windowWidth < 780){
+    elem.removeClass('card__wrapper--row');
+    elem2.removeClass('section__card--column')
+  }
+  else{
+    
+    elem.addClass('card__wrapper--row');
+    elem2.addClass('section__card--column')
+  }
+}
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-$(".polzunok-5").slider({
-    min: 0,
-    max: 5000,
-    values: [2000, 3000],
-    range: true,
-    animate: "fast",
-    slide : function(event, ui) {    
-        $(".polzunok-input-5-left").val(ui.values[ 0 ]);   
-        $(".polzunok-input-5-right").val(ui.values[ 1 ]);  
-    }    
+checkWidth(); // проверит при загрузке страницы
+
+$(window).resize(function(){
+  checkWidth(); // проверит при изменении размера окна клиента
 });
 
 })
@@ -104,7 +66,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     /*init*/
     var sliderCoords = getCoords(slider);
     button1.style.marginLeft = '0px';
-    button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth) + 'px';
+    button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth-50) + 'px';
     between.style.width = (slider.offsetWidth-button1.offsetWidth) + 'px';
     inpt1.value = min;
     inpt2.value = max;
